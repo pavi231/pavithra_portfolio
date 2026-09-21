@@ -178,6 +178,34 @@ section {
     overflow: hidden;
 }
 
+        .education-place {
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.achievement-list li {
+    padding: 7px 0;
+    color: var(--text-muted);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.achievement-list li::before {
+    content: "✦";
+    color: var(--accent-blue);
+    margin-right: 8px;
+}
+
+.card h3 i {
+    color: var(--accent-blue);
+    margin-right: 8px;
+}
 section::before {
     content: "";
     position: absolute;
@@ -409,14 +437,16 @@ h2 { font-size: 1.35rem; color: #fff; margin-bottom: 20px; letter-spacing: -.01e
     </a>
 </div>
 
+       
         <nav id="navbar">
-            <a href="#about" class="nav-link active">About</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#technologies" class="nav-link">Stack</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+    <a href="#about" class="nav-link active">About</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#achievements" class="nav-link">Achievements</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#technologies" class="nav-link">Stack</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
     </header>
 
     <div class="container">
@@ -429,16 +459,104 @@ h2 { font-size: 1.35rem; color: #fff; margin-bottom: 20px; letter-spacing: -.01e
             </p>
         </section>
 
-        <!-- EDUCATION SECTION (Slides from Left) -->
-        <section id="education" class="reveal reveal-left">
-            <h2>Education</h2>
-            <div class="card">
-                <h3>Bachelor of Engineering / Technology</h3>
-                <p style="color: var(--accent-blue); font-size: 0.85rem; margin-bottom: 6px;">Computer Science & Engineering</p>
-                <p>Focusing on software engineering, deep learning algorithms, computer vision, and modern application development.</p>
-            </div>
-        </section>
+        
 
+        <!-- EDUCATION SECTION -->
+<section id="education" class="reveal reveal-left">
+    <h2>Education</h2>
+
+    <div class="grid-2">
+
+        <div class="card">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="education-place">Reva University</p>
+            <p>2024 – 2027 (Pursuing)</p>
+            <p><strong>CGPA: 8.88</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>2nd PUC — CEBA</h3>
+            <p class="education-place">Reva University</p>
+            <p>2023 – 2024</p>
+            <p><strong>Percentage: 96%</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>SSLC — 10th Standard</h3>
+            <p class="education-place">JGRVK School CBSE</p>
+            <p>2021 – 2022</p>
+            <p><strong>Percentage: 76%</strong></p>
+        </div>
+
+    </div>
+</section>
+
+        <!-- ACHIEVEMENTS & CERTIFICATIONS SECTION -->
+<section id="achievements" class="reveal reveal-right">
+
+    <h2>Achievements & Certifications</h2>
+
+    <div class="grid-2">
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-certificate"></i>
+                Technical Certifications
+            </h3>
+
+            <ul class="achievement-list">
+                <li>Python PCAP</li>
+                <li>DBMS & SQL — Infosys</li>
+                <li>Generative AI — Google Cloud</li>
+                <li>Data Structures & Backend — Java</li>
+                <li>RDBMS & Microsoft Fabric SQL</li>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Software Testing</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-trophy"></i>
+                Awards
+            </h3>
+
+            <ul class="achievement-list">
+                <li>3rd Prize — Hack Horizon Hackathon</li>
+                <li>2nd Prize — Web Design, REVA PU</li>
+                <li>Ignite India Entrepreneurship</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-code"></i>
+                Competitions
+            </h3>
+
+            <ul class="achievement-list">
+                <li>Hack Horizon 2.0</li>
+                <li>AURA'25 — Coding</li>
+                <li>AURA'25 — Debugging</li>
+                <li>AURA'25 — No-Code Web Design</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-star"></i>
+                Professional
+            </h3>
+
+            <ul class="achievement-list">
+                <li>Time Management — Infosys</li>
+                <li>Pariksha Pe Charcha 2021</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
         <!-- PROJECTS SECTION (Slides from Right) -->
         <section id="projects" class="reveal reveal-right">
             <h2>Featured Work</h2>
